@@ -497,8 +497,8 @@ extern "C" fn window_will_use_fullscreen_presentation_options(
   // we don't, for consistency. If we do, it should be documented that the
   // user-provided options are ignored in exclusive fullscreen.
   (NSApplicationPresentationOptions::NSApplicationPresentationFullScreen
-    | NSApplicationPresentationOptions::NSApplicationPresentationHideDock
-    | NSApplicationPresentationOptions::NSApplicationPresentationHideMenuBar)
+    | NSApplicationPresentationOptions::NSApplicationPresentationAutoHideDock
+    | NSApplicationPresentationOptions::NSApplicationPresentationAutoHideMenuBar)
     .bits()
 }
 
